@@ -3,15 +3,28 @@
   "version": "1.0.0",
   "main": "src/mandrill-send-promise.js",
   "description": "A package that lets you send email using Mandrill with one line of NodeJS.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/withyoursquad/mandrill-send-promise"
+  },
+  "author": "Squad",
+  "license": "MIT",
+  "homepage": "https://github.com/withyoursquad/mandrill-send-promise#readme",
+  "keywords": [
+    "node",
+    "nodejs",
+    "email",
+    "mandrill",
+    "promise",
+    "promises",
+    "mailchimp"
+  ],
   "scripts": {
     "test": "jest"
   },
   "directories": {
     "test": "tests"
   },
-  "keywords": [],
-  "author": "Squad",
-  "license": "MIT",
   "jest": {
     "collectCoverage": true,
     "coverageReporters": ["text"],
