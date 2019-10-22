@@ -10,7 +10,7 @@ Other public utilities (e.g. `mandrill-send`) are callback-based and have depend
 `mandrill-send-promise` is promise-based, has 100% test coverage, and has no dependencies.
 
 ## Installation
-Run `yarn add mandrill-send-promise`.
+Run `npm install mandrill-send-promise` or `yarn add mandrill-send-promise`.
 
 ## Setup
 
