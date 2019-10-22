@@ -3,26 +3,26 @@
 A simple utility function without any dependencies that sends email via Mandrill's REST API and returns a Promise.
 
 #### Why use this?
-While Mandrill provides their own NodeJS SDK, it is 3000 lines of code and includes dozens of functions.
+While Mandrill provides their own NodeJS SDK, it is 3000 lines of code, includes dozens of unrelated functions, and is callback-based.
 
-Other public utilities (e.g. `mandrill-send`) are callback-based and have dependencies that must be updated to remain secure and stable.
+Other public utilities (e.g. `mandrill-send`) are callback-based and have dependencies that must be updated to remain secure and stable. [Dependencies are hell](http://russelljanderson.com/dependency-hell/).
 
-Also, `mandrill-send-promise` has 100% test coverage.
+`mandrill-send-promise` is promise-based, has 100% test coverage, and has no dependencies.
 
 ## Installation
 Run `yarn add mandrill-send-promise`.
 
 ## Setup
 
-Import mandrill-send into the file where you want to send your email. 
+Import `mandrill-send-promise` into the file where you want to send your email. 
 ```
 const sendEmail = require('mandrill-send-promise')('API_KEY');
 ```
 
 ## Usage
-Call the `send` function with an object parameter that includes all required fields.
+Call that `sendEmail` function with an object parameter that includes all required fields.
 ```
-mandrillSend.run(
+sendEmail(
   {
     from_email: "noreply@example.com",
     from_name: "From Name",
