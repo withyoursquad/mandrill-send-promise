@@ -1,6 +1,6 @@
 {
   "name": "mandrill-send-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/mandrill-send-promise.js",
   "description": "A package that lets you send email using Mandrill with one line of NodeJS.",
   "repository": {
@@ -27,7 +27,11 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["text"],
-    "collectCoverageFrom": ["src/mandrill-send-promise.js"]
+    "coverageReporters": [
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/mandrill-send-promise.js"
+    ]
   }
 }
